@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+	<string name="app_name">My Simple Alarm Clock
+	</string>
+	<string-array name="alarm_delay">
+		<item>1</item>
+		<item>2</item>
+		<item>5</item>
+		<item>10</item>
+	</string-array>
+	<string name="button_caption">SET</string>
+	<string name="snooze_option1">1</string>
+	<string name="snooze_option2">2</string>
+	<string name="snooze_option3">5</string>
+	<string name="snooze_option4">10</string>
+	<string name="snooze_button_caption">SNOOZE</string>
+</resources>

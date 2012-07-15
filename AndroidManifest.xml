@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="omalleyland.my.simple.tools.mysimplealarmclock"
+      android:versionName="1.0" android:versionCode="1">      
+
+		<uses-permission android:name="android.permission.INTERNET" />
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-sdk android:minSdkVersion="7" />
+		
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+				<!-- Main Activity that displays when the launcher is clicked -->
+        
+				<!-- Configure(Main Copy) Activity that displays when the Widget "Open" Button is clicked -->
+        
+        
+				<!-- Alarm Activity that displays when the Alarm receiver calls it -->
+				<activity android:label="My Simple Alarm Clock"
+                   android:launchMode="singleInstance" android:name="omalleyland.my.simple.tools.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+				
+				<!-- Receiver class for when the Alarm goes off -->
+				<!-- Receiver class for when the Alarm goes off -->
+				<receiver android:name="omalleyland.my.simple.tools.AlarmReceiver"/>
+				
+				<!-- Broadcast Receiver that will process AppWidget updates -->
+        <receiver android:label="@string/app_name" android:name="omalleyland.my.simple.tools.NextAlarm">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+						<meta-data android:name="android.appwidget.provider" 
+						android:resource="@xml/nextalarmwidgetprovider" />
+				</receiver>
+				
+				<!-- Service for Updating Next Alarm Value on Widget -->
+				<service android:configChanges="keyboardHidden|orientation" android:name="omalleyland.my.simple.tools.UpdateService"></service>
+				
+        <receiver android:permission="android.permission.RECEIVE_BOOT_COMPLETED" android:name="omalleyland.my.simple.tools.StartUpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+               </intent-filter>
+        </receiver>
+				
+				<!-- The application's publisher ID assigned by AdMob -->
+				
+				<activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation"/>	
+									
+				<!-- Track Market installs
+				<receiver android:name="com.admob.android.ads.analytics.InstallReceiver"
+									android:exported="true">
+					<intent-filter>
+						<action android:name="com.android.vending.INSTALL_REFERRER" />
+					</intent-filter>
+				</receiver> -->
+				
+				<activity android:name="omalleyland.my.simple.tools.AlarmActivity">
+				<intent-filter>
+								<action android:name="android.intent.action.MAIN"/>
+						</intent-filter></activity>
+						
+				<activity android:name="omalleyland.my.simple.tools.ConfigureAlarm"
+                  android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name=".NextAlarm.ACTION_WIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+
+    </application>	
+</manifest> 
+

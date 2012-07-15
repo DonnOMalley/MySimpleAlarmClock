@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/MainLayout" android:orientation="vertical"
+	android:gravity="center_horizontal|bottom" android:layout_gravity="bottom">
+	<LinearLayout android:layout_weight="1"
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:layout_width="fill_parent" android:id="@+id/linearLayout1">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/linearLayout3" android:gravity="center_horizontal">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_weight="1" android:layout_height="fill_parent"
+				android:id="@+id/linearLayout5" android:layout_gravity="right"
+				android:gravity="center_vertical|right">
+				<RadioButton android:id="@+id/SnoozeMin1"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_weight="1" android:layout_height="fill_parent"
+				android:id="@+id/linearLayout4" android:layout_gravity="left"
+				android:gravity="center_vertical|left">
+				<TextView android:text="@string/snooze_option1"
+					android:layout_width="wrap_content" android:id="@+id/textView1"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/LinearLayout03" android:gravity="center_horizontal">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_weight="1" android:layout_height="fill_parent"
+				android:id="@+id/LinearLayout02" android:gravity="center_vertical|right">
+				<RadioButton android:id="@+id/SnoozeMin2"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_weight="1" android:layout_height="fill_parent"
+				android:id="@+id/LinearLayout01" android:layout_gravity="left"
+				android:gravity="center_vertical|left">
+				<TextView android:text="@string/snooze_option2"
+					android:layout_width="wrap_content" android:id="@+id/TextView01"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/LinearLayout07" android:gravity="center_horizontal">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_weight="1" android:layout_height="fill_parent"
+				android:id="@+id/LinearLayout08" android:gravity="center_vertical|right">
+				<RadioButton android:id="@+id/SnoozeMin5"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_weight="1" android:layout_height="fill_parent"
+				android:id="@+id/LinearLayout09" android:layout_gravity="left"
+				android:gravity="center_vertical|left">
+				<TextView android:text="@string/snooze_option3"
+					android:layout_width="wrap_content" android:id="@+id/TextView03"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/LinearLayout06" android:gravity="center_horizontal">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_weight="1" android:layout_height="fill_parent"
+				android:id="@+id/LinearLayout05" android:layout_gravity="right"
+				android:gravity="center_vertical|right">
+				<RadioButton android:id="@+id/SnoozeMin10"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_weight="1" android:layout_height="fill_parent"
+				android:id="@+id/LinearLayout04" android:layout_gravity="left"
+				android:gravity="center_vertical|left">
+				<TextView android:text="@string/snooze_option4"
+					android:layout_width="wrap_content" android:id="@+id/TextView02"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<Button android:id="@+id/snooze_button" android:layout_width="fill_parent"
+			android:text="@string/snooze_button_caption" android:layout_weight="1"
+			android:layout_height="wrap_content" android:layout_gravity="bottom"></Button>
+	</LinearLayout>
+</LinearLayout>

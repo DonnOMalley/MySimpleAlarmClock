@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:myapp="http://schemas.android.com/apk/res/omalleyland.my.simple.tools.mysimplealarmclock"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@+id/MainLayout"
+	android:gravity="center_horizontal">
+	<com.google.ads.AdView android:layout_width="fill_parent"
+		android:id="@+id/myAdView" android:visibility="visible"
+		android:layout_height="wrap_content"></com.google.ads.AdView>
+	<AnalogClock android:focusable="true"
+		android:layout_height="wrap_content" android:id="@+id/AnalogClock"
+		android:focusableInTouchMode="true" android:layout_width="fill_parent"></AnalogClock>
+	<TimePicker android:focusable="false"
+		android:focusableInTouchMode="false" android:id="@+id/AlarmTimePicker"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"></TimePicker>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/linearLayout2"
+		android:gravity="center_horizontal">
+		<CheckBox android:id="@+id/EnabledCheckBox"
+			android:focusableInTouchMode="false" android:layout_width="wrap_content"
+			android:checked="false" android:text="Enabled" android:gravity="center"
+			android:layout_height="wrap_content" android:focusable="false"></CheckBox>
+	</LinearLayout>
+</LinearLayout>
+
+

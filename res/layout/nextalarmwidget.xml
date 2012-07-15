@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" android:layout_height="fill_parent"> </LinearLayout> -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:orientation="vertical"
+	android:background="@drawable/widgetbg" android:layout_height="wrap_content"
+	android:layout_gravity="center">
+
+	<!-- <TextView android:id="@+id/widget_textview" android:text="Simple Alarm 
+		Clock Widget" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+		android:layout_gravity="center_horizontal|center" android:layout_marginTop="5dip" 
+		android:padding="10dip" android:textColor="@android:color/black"/> <ImageButton 
+		android:id="@+id/imageButton1" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:src="@drawable/icon" android:layout_gravity="center" android:layout_marginTop="20dip"></ImageButton> -->
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:layout_width="fill_parent" android:gravity="center_horizontal|center_vertical"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:clickable="true">
+		<TextView android:id="@+id/textView1" android:textColor="@android:color/black"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:layout_width="fill_parent" android:text="My Simple Alarm Clock"
+			android:layout_marginTop="10dip" android:textSize="16dip"></TextView>
+		<TextView android:id="@+id/textView3" android:layout_height="wrap_content"
+			android:text="Next Alarm" android:textColor="@android:color/black"
+			android:layout_width="wrap_content" android:textSize="14dip"></TextView>
+		<TextView android:id="@+id/AlarmTimeTextView"
+			android:layout_height="wrap_content" android:text="12:00 PM"
+			android:textColor="@android:color/black" android:layout_width="wrap_content"
+			android:textSize="15dip"></TextView>
+	</LinearLayout>
+</LinearLayout>
