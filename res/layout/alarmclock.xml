@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:myapp="http://schemas.android.com/apk/res/omalleyland.my.simple.tools.mysimplealarmclock"
+	xmlns:myapp="http://schemas.android.com/apk/res/omalleyland.my.simple.tools"
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
 	android:orientation="vertical"
 	android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@+id/MainLayout"

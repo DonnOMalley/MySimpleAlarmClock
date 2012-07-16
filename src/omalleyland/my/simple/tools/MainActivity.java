@@ -2,7 +2,6 @@ package omalleyland.my.simple.tools;
 
 import java.util.Calendar;
 
-import omalleyland.my.simple.tools.mysimplealarmclock.R;
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;

@@ -1,6 +1,5 @@
 package omalleyland.my.simple.tools;
 
-import omalleyland.my.simple.tools.mysimplealarmclock.R;
 import android.widget.*;
 import android.util.Log;
 import android.content.ComponentName;

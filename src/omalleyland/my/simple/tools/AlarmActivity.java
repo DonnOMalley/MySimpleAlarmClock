@@ -1,6 +1,5 @@
 package omalleyland.my.simple.tools;
 
-import omalleyland.my.simple.tools.mysimplealarmclock.R;
 import java.util.Calendar;
 import android.app.Activity;
 import android.app.AlarmManager;

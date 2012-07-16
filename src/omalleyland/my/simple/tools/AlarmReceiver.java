@@ -1,6 +1,5 @@
 package omalleyland.my.simple.tools;
 
-import omalleyland.my.simple.tools.mysimplealarmclock.R;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;

@@ -1,6 +1,5 @@
 package omalleyland.my.simple.tools;
 
-import omalleyland.my.simple.tools.mysimplealarmclock.R;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.appwidget.AppWidgetManager;
