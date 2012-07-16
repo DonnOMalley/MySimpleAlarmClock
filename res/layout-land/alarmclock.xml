@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:myapp="http://schemas.android.com/apk/res/omalleyland.my.simple.tools.mysimplealarmclock"
+	xmlns:myapp="http://schemas.android.com/apk/res/omalleyland.my.simple.tools"
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
 	android:scrollbarAlwaysDrawVerticalTrack="true" android:gravity="center_horizontal"
 	android:orientation="vertical">
 	<com.google.ads.AdView android:layout_width="fill_parent"
 		android:id="@+id/myAdView" android:visibility="visible"
-		android:layout_height="wrap_content"></com.google.ads.AdView>
+		android:layout_height="wrap_content" myapp:adUnitId="a14e08bc9c8dcff"></com.google.ads.AdView>
 	<LinearLayout android:layout_width="fill_parent"
 		android:id="@+id/LinearLayout1" android:layout_gravity="clip_vertical|clip_horizontal"
 		android:layout_height="wrap_content" android:gravity="center_horizontal">

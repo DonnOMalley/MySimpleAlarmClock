@@ -7,7 +7,7 @@
 	android:gravity="center_horizontal">
 	<com.google.ads.AdView android:layout_width="fill_parent"
 		android:id="@+id/myAdView" android:visibility="visible"
-		android:layout_height="wrap_content"></com.google.ads.AdView>
+		android:layout_height="wrap_content" myapp:adUnitId="a14e08bc9c8dcff"></com.google.ads.AdView>
 	<AnalogClock android:focusable="true"
 		android:layout_height="wrap_content" android:id="@+id/AnalogClock"
 		android:focusableInTouchMode="true" android:layout_width="fill_parent"></AnalogClock>
