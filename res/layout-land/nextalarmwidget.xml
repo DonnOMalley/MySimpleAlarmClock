@@ -2,7 +2,7 @@
 <!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_width="fill_parent" android:layout_height="fill_parent"> </LinearLayout> -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:background="@drawable/widgetbg"
@@ -24,13 +24,11 @@
 		    android:id="@+id/textView1"
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
-		    android:layout_gravity="center_vertical"
 		    android:layout_marginTop="10dip"
 		    android:gravity="center"
 		    android:text="Simple Alarm Clock"
 		    android:textColor="@android:color/black"
 		    android:textSize="15dp" >
-
 </TextView>
 
 		<TextView
@@ -40,7 +38,6 @@
 		    android:text="Next Alarm"
 		    android:textColor="@android:color/black"
 		    android:textSize="15dp" >
-
 </TextView>
 
 		<TextView
@@ -50,7 +47,6 @@
 		    android:text="12:00 PM"
 		    android:textColor="@android:color/black"
 		    android:textSize="20dp" >
-
 </TextView>
 	</LinearLayout>
 </LinearLayout>
